@@ -1,0 +1,35 @@
+//Variable overrides before importing Bootstrap
+
+$primary : #003e7a;
+$secondary : #ffffff;
+$font-family-sans-serif: "Open Sans", sans-serif, Arial;
+$btn-border-radius: 0em;
+
+//Import Bootstrap
+
+@import 'bootstrapScss/bootstrap';
+
+//Add any custom styling
+
+body{
+  background-color: $primary;
+}
+
+#contentContainer{
+  background-color: $body-tertiary-bg;
+}
+
+#billboardContainer{
+  position: relative;
+}
+
+#billboardText{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+#gettingStartedInfo{
+  background-color: lightgrey;
+}
